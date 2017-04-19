@@ -9,7 +9,8 @@
 int main() {
     int l2cap_socket, hci_device_id, hci_socket, hci_device_address, client_socket, len, afds;
 
-    struct sockaddr_rc l2cap_address = { 0 };
+    struct sockaddr_l2 l2cap_address = { 0 };
+    struct fd_set afds = { 0 };
     char buffer[1024] = { 0 };
 
     /* create L2CAP socket, and bind it to the local adapter */
