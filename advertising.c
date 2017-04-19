@@ -7,7 +7,7 @@
 #include <bluetooth/l2cap.h>
 
 int main() {
-    int l2cap_socket, hci_device_id, hci_socket, hci_device_address, client_socket, len, afds;
+    int l2cap_socket, hci_device_id, hci_socket, hci_device_address, client_socket, len, i;
 
     struct sockaddr_l2 l2cap_address = { 0 };
     struct fd_set afds = { 0 };
